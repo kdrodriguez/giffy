@@ -12,6 +12,17 @@ function App() {
       <div className="App">
         <section className="App-content">
           <h3> Giffy </h3>
+          <p>
+            {" "}
+            This app is based on Midudev React course. Here is a{" "}
+            <a
+              href="https://github.com/midudev/react-live-coding"
+              target="_blank"
+              rel="noreferrer"
+            >
+              github repo
+            </a>
+          </p>
           <Link to="/"> Inicio </Link>
           <GifsContextProvider>
             <Route component={Home} path="/" />
