@@ -24,7 +24,7 @@ const useGifs = ({ keyword } = { keyword: null }) => {
         keyword === null ? "Indiana" : keyword
       );
     });
-  }, [, keyword, keywordToSearch, setGifs]); // Hace a keyword dependiente a cambios
+  }, [keyword, keywordToSearch, setGifs]); // Hace a keyword dependiente a cambios
 
   useEffect(() => {
     if (page === INITIAL_PAGE) return;
