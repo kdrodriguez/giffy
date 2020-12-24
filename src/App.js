@@ -14,7 +14,7 @@ function App() {
           <h3> Giffy </h3>
           <p>
             {" "}
-            This app is based on Midudev React course. Here is a{" "}
+            This app is based on Midudev React course. Here is the{" "}
             <a
               href="https://github.com/midudev/react-live-coding"
               target="_blank"
@@ -28,6 +28,7 @@ function App() {
             <Route component={Home} path="/" />
             <Route component={SearchResults} path="/search/:keyword" />
             <Route component={Detail} path="/gif/:id" />
+            <Route component={() => <h1> 404 Error: </h1>} path="/404" />
           </GifsContextProvider>
         </section>
       </div>

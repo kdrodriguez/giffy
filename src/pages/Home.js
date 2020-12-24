@@ -4,6 +4,7 @@ import useGifs from "hooks/useGifs";
 import GifsList from "components/GifsList";
 import TrendingSingle from "../components/TrendingSingle";
 import SearchForm from "components/SearchForm";
+import { Helmet } from "react-helmet";
 
 const DEFAULT_GIFS = ["Japan", "Football", "Science", "Programming"];
 
@@ -26,6 +27,9 @@ const Home = () => {
   return (
     <>
       {/* {element} */}
+      <Helmet>
+        <title>Home | Giffy</title>
+      </Helmet>
       <SearchForm onSubmit={handleSubmit} />
       <ul>
         {DEFAULT_GIFS.map((keywordGif) => (
