@@ -8,7 +8,7 @@ import { GifsContextProvider } from "./context/GifsContext";
 
 function App() {
   return (
-    <StaticContext.Provider value={{ hola: "hola", chao: "chao" }}>
+    <StaticContext.Provider value={{ hola: "holaa", chao: "chao" }}>
       <div className="App">
         <section className="App-content">
           <h3> Giffy </h3>
